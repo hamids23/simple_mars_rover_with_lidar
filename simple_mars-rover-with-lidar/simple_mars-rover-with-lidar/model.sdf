@@ -1,0 +1,554 @@
+<sdf version="1.7">
+    <model name="simple_mars-rover-with-lidar">
+        <pose>0 0 0 0 0 0</pose>
+        <link name="chassis">
+            <pose>0 0 0.64 0 0 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <box>
+                        <size>1 2.2 0.5</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>-0.98 -1.85 -0.75 0 0 1.5708</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://simple_mars-rover-with-lidar/meshes/cabin.dae</uri>
+                        <scale>0.007 0.007 0.007</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>1 0.98 0.98.95</ambient>
+                </material>
+            </visual>
+        </link>
+        <link name="rra">
+            <pose>0.55 -0.65 0.355 0 0 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.44</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.44</length>
+                    </cylinder>
+                </geometry>
+            </visual>
+        </link>
+        <link name="rfa">
+            <pose>0.55 0.65 0.355 0 0 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.44</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.44</length>
+                    </cylinder>
+                </geometry>
+            </visual>
+        </link>
+        <link name="lra">
+            <pose>-0.55 -0.65 0.355 0 0 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.44</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.44</length>
+                    </cylinder>
+                </geometry>
+            </visual>
+        </link>
+        <link name="lfa">
+            <pose>-0.55 0.65 0.355 0 0 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.44</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.44</length>
+                    </cylinder>
+                </geometry>
+            </visual>
+        </link>
+        <link name="rrb">
+            <pose>0.55 -0.65 0.12 0 0 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.03</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.03</length>
+                    </cylinder>
+                </geometry>
+            </visual>
+        </link>
+        <link name="rfb">
+            <pose>0.55 0.65 0.12 0 0 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.03</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.03</length>
+                    </cylinder>
+                </geometry>
+            </visual>
+        </link>
+        <link name="lrb">
+            <pose>-0.55 -0.65 0.12 0 0 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.03</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.03</length>
+                    </cylinder>
+                </geometry>
+            </visual>
+        </link>
+        <link name="lfb">
+            <pose>-0.55 0.65 0.12 0 0 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.03</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.03</length>
+                    </cylinder>
+                </geometry>
+            </visual>
+        </link>
+        <link name="rrWheel">
+            <pose>0.65 -0.65 0.12 0 1.5708 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.12</radius>
+                        <length>0.08</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://simple_mars-rover-with-lidar/meshes/offroad-wheel.dae</uri>
+                        <scale>0.00015 0.00015 0.00015</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.7 0.7 1</ambient>
+                </material>
+            </visual>
+        </link>
+        <link name="rfWheel">
+            <pose>0.65 0.65 0.12 0 1.5708 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.12</radius>
+                        <length>0.08</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://simple_mars-rover-with-lidar/meshes/offroad-wheel.dae</uri>
+                        <scale>0.00015 0.00015 0.00015</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.7 0.7 1</ambient>
+                </material>
+            </visual>
+        </link>
+        <link name="lrWheel">
+            <pose>-0.65 -0.65 0.12 0 -1.5708 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.12</radius>
+                        <length>0.08</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://simple_mars-rover-with-lidar/meshes/offroad-wheel.dae</uri>
+                        <scale>0.00015 0.00015 0.00015</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.7 0.7 1</ambient>
+                </material>
+            </visual>
+        </link>
+        <link name="lfWheel">
+            <pose>-0.65 0.65 0.12 0 -1.5708 0</pose>
+                <inertial>
+                    <inertia>
+                        <ixx>1</ixx>
+                        <ixy>0</ixy>
+                        <ixz>0</ixz>
+                        <iyy>1</iyy>
+                        <iyz>0</iyz>
+                        <izz>1</izz>
+                    </inertia>
+                </inertial>
+            <collision name="collision">
+                <pose>0 0 0 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.12</radius>
+                        <length>0.08</length>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <pose>0 0 0 0 1.5708 0</pose>
+                <geometry>
+                    <mesh>
+                        <uri>model://simple_mars-rover-with-lidar/meshes/offroad-wheel.dae</uri>
+                        <scale>0.00015 0.00015 0.00015</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.7 0.7 1</ambient>
+                </material>
+            </visual>
+        </link>
+        <include>
+            <uri>model://hokuyo</uri>
+            <pose>0 -0.2 1.271 0 0 -1.57079</pose>
+        </include>
+        <joint name="rra_spring_axial_upper_joint" type="prismatic">
+            <child>rra</child>
+            <parent>chassis</parent>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <limit>
+                    <lower>-0.1</lower>
+                    <upper>0.1</upper>
+                </limit>
+                <xyz>0 0 1</xyz>
+                <dynamics>
+                    <spring_stiffness>400</spring_stiffness>
+                    <spring_reference>0</spring_reference>
+                    <damping>0.8</damping>
+                    <friction>0.7</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <joint name="rfa_spring_axial_upper_joint" type="prismatic">
+            <child>rfa</child>
+            <parent>chassis</parent>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <limit>
+                    <lower>-0.1</lower>
+                    <upper>0.1</upper>
+                </limit>
+                <xyz>0 0 1</xyz>
+                <dynamics>
+                    <spring_stiffness>400</spring_stiffness>
+                    <spring_reference>0</spring_reference>
+                    <damping>0.8</damping>
+                    <friction>0.7</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <joint name="lra_spring_axial_upper_joint" type="prismatic">
+            <child>lra</child>
+            <parent>chassis</parent>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <limit>
+                    <lower>-0.1</lower>
+                    <upper>0.1</upper>
+                </limit>
+                <xyz>0 0 1</xyz>
+                <dynamics>
+                    <spring_stiffness>400</spring_stiffness>
+                    <spring_reference>0</spring_reference>
+                    <damping>0.8</damping>
+                    <friction>0.7</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <joint name="lfa_spring_axial_upper_joint" type="prismatic">
+            <child>lfa</child>
+            <parent>chassis</parent>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+                <limit>
+                    <lower>-0.1</lower>
+                    <upper>0.1</upper>
+                </limit>
+                <xyz>0 0 1</xyz>
+                <dynamics>
+                    <spring_stiffness>400</spring_stiffness>
+                    <spring_reference>0</spring_reference>
+                    <damping>0.8</damping>
+                    <friction>0.7</friction>
+                </dynamics>
+            </axis>
+        </joint>
+        <joint name="rra2rrb" type="fixed">
+            <child>rrb</child>
+            <parent>rra</parent>
+            <pose>0 0 0 0 0 0</pose>
+        </joint>
+        <joint name="rfa2rfb" type="fixed">
+            <child>rfb</child>
+            <parent>rfa</parent>
+            <pose>0 0 0 0 0 0</pose>
+        </joint>
+        <joint name="lra2lrb" type="fixed">
+            <child>lrb</child>
+            <parent>lra</parent>
+            <pose>0 0 0 0 0 0</pose>
+        </joint>
+        <joint name="lfa2lfb" type="fixed">
+            <child>lfb</child>
+            <parent>lfa</parent>
+            <pose>0 0 0 0 0 0</pose>
+        </joint>
+        <joint name="rrWheel_joint" type="revolute">
+            <child>rrWheel</child>
+            <parent>rrb</parent>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+               <xyz>0 0 1</xyz>
+            </axis>
+        </joint>
+        <joint name="rfWheel_joint" type="revolute">
+            <child>rfWheel</child>
+            <parent>rfb</parent>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+               <xyz>0 0 1</xyz>
+            </axis>
+        </joint>
+        <joint name="lrWheel_joint" type="revolute">
+            <child>lrWheel</child>
+            <parent>lrb</parent>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+               <xyz>0 0 -1</xyz>
+            </axis>
+        </joint>
+        <joint name="lfWheel_joint" type="revolute">
+            <child>lfWheel</child>
+            <parent>lfb</parent>
+            <pose>0 0 0 0 0 0</pose>
+            <axis>
+               <xyz>0 0 -1</xyz>
+            </axis>
+        </joint>
+        <joint name="hokuyo" type="fixed">
+            <child>hokuyo::link</child>
+            <parent>chassis</parent>
+        </joint>
+    </model>
+</sdf>

@@ -1,0 +1,1 @@
+Unzip offroad-wheel.zip file here (extract here & dont chage it's directory), then you are able to see the wheel's offroad mesh
